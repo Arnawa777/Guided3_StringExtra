@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Warna"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radioMerah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Merah"
+            android:textColor="#FF0000" />
+
+        <RadioButton
+            android:id="@+id/radioHijau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hijau"
+            android:textColor="#00FF00" />
+
+        <RadioButton
+            android:id="@+id/radioBiru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biru"
+            android:textColor="#0000FF" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="sendMessage"
+        android:text="PILIH WARNA"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ketik Angka"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft= "20dp"
+        android:layout_marginTop= "40dp"/>
+
+    <EditText
+        android:id="@+id/texNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF00FF"
+        android:onClick="sendNumberMessage"
+        android:text="KIRIM ANGKA"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
